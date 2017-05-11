@@ -61,6 +61,11 @@
             this.DgStatementTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DgStatementSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.BtnDeletePermission = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.DgPermissionsList = new System.Windows.Forms.DataGridView();
+            this.DgPermissionsListUserId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DgPermissionsListGuid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DeanLabelName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.DeansList = new System.Windows.Forms.ListBox();
@@ -76,11 +81,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.StatementUserId = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.DgPermissionsList = new System.Windows.Forms.DataGridView();
-            this.label10 = new System.Windows.Forms.Label();
-            this.BtnDeletePermission = new System.Windows.Forms.Button();
-            this.DgPermissionsListUserId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DgPermissionsListGuid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -91,9 +91,9 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridDeanStatementsList)).BeginInit();
             this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgPermissionsList)).BeginInit();
             this.tabDean.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgPermissionsList)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage1
@@ -329,7 +329,7 @@
             this.BtnRemoveStatement.TabIndex = 3;
             this.BtnRemoveStatement.Text = "Удалить заявление";
             this.BtnRemoveStatement.UseVisualStyleBackColor = true;
-            this.BtnRemoveStatement.Click += new System.EventHandler(this.BtnViewStatement_Click);
+            this.BtnRemoveStatement.Click += new System.EventHandler(this.BtnRemoveStatement_Click);
             // 
             // label9
             // 
@@ -394,6 +394,50 @@
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Пропуска";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // BtnDeletePermission
+            // 
+            this.BtnDeletePermission.Location = new System.Drawing.Point(642, 7);
+            this.BtnDeletePermission.Name = "BtnDeletePermission";
+            this.BtnDeletePermission.Size = new System.Drawing.Size(158, 29);
+            this.BtnDeletePermission.TabIndex = 2;
+            this.BtnDeletePermission.Text = "Удалить пропуск";
+            this.BtnDeletePermission.UseVisualStyleBackColor = true;
+            this.BtnDeletePermission.Click += new System.EventHandler(this.BtnDeletePermission_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(4, 7);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(135, 29);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Поропуска";
+            // 
+            // DgPermissionsList
+            // 
+            this.DgPermissionsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgPermissionsList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DgPermissionsListUserId,
+            this.DgPermissionsListGuid});
+            this.DgPermissionsList.Location = new System.Drawing.Point(6, 40);
+            this.DgPermissionsList.Name = "DgPermissionsList";
+            this.DgPermissionsList.RowTemplate.Height = 24;
+            this.DgPermissionsList.Size = new System.Drawing.Size(794, 572);
+            this.DgPermissionsList.TabIndex = 0;
+            // 
+            // DgPermissionsListUserId
+            // 
+            this.DgPermissionsListUserId.HeaderText = "User Id";
+            this.DgPermissionsListUserId.Name = "DgPermissionsListUserId";
+            this.DgPermissionsListUserId.ReadOnly = true;
+            // 
+            // DgPermissionsListGuid
+            // 
+            this.DgPermissionsListGuid.HeaderText = "Guid";
+            this.DgPermissionsListGuid.Name = "DgPermissionsListGuid";
+            this.DgPermissionsListGuid.ReadOnly = true;
             // 
             // DeanLabelName
             // 
@@ -542,50 +586,6 @@
             this.label8.Size = new System.Drawing.Size(140, 29);
             this.label8.TabIndex = 2;
             // 
-            // DgPermissionsList
-            // 
-            this.DgPermissionsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgPermissionsList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.DgPermissionsListUserId,
-            this.DgPermissionsListGuid});
-            this.DgPermissionsList.Location = new System.Drawing.Point(6, 40);
-            this.DgPermissionsList.Name = "DgPermissionsList";
-            this.DgPermissionsList.RowTemplate.Height = 24;
-            this.DgPermissionsList.Size = new System.Drawing.Size(794, 572);
-            this.DgPermissionsList.TabIndex = 0;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(4, 7);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(135, 29);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Поропуска";
-            // 
-            // BtnDeletePermission
-            // 
-            this.BtnDeletePermission.Location = new System.Drawing.Point(642, 7);
-            this.BtnDeletePermission.Name = "BtnDeletePermission";
-            this.BtnDeletePermission.Size = new System.Drawing.Size(158, 29);
-            this.BtnDeletePermission.TabIndex = 2;
-            this.BtnDeletePermission.Text = "Удалить пропуск";
-            this.BtnDeletePermission.UseVisualStyleBackColor = true;
-            this.BtnDeletePermission.Click += new System.EventHandler(this.BtnDeletePermission_Click);
-            // 
-            // DgPermissionsListUserId
-            // 
-            this.DgPermissionsListUserId.HeaderText = "User Id";
-            this.DgPermissionsListUserId.Name = "DgPermissionsListUserId";
-            this.DgPermissionsListUserId.ReadOnly = true;
-            // 
-            // DgPermissionsListGuid
-            // 
-            this.DgPermissionsListGuid.HeaderText = "Guid";
-            this.DgPermissionsListGuid.Name = "DgPermissionsListGuid";
-            this.DgPermissionsListGuid.ReadOnly = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -608,10 +608,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.DataGridDeanStatementsList)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgPermissionsList)).EndInit();
             this.tabDean.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgPermissionsList)).EndInit();
             this.ResumeLayout(false);
 
         }

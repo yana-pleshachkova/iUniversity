@@ -312,6 +312,7 @@ namespace iUniversity
             {
                 if (dean.Id == realDeanId) // Находим выбранный деканат
                 {
+                    dean.CreatePermission(idUser); // Сгененрируем новый пропуск для пользователя
                     dean.RemoveStatement(idUser);
                     DataGridDeanStatementsList.Rows.RemoveAt(rowindex);
                     RedrawPermissionsList();
