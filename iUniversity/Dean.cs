@@ -9,9 +9,9 @@ namespace iUniversity
         {
             Id = id;
             Name = name;
-            Users = new List<int>();
-            Statements = new List<Statement>();
-            Permissions = new List<Permission>();
+            Users = new List<int>(); //сисок пользователей, где хранятся id пользователей
+            Statements = new List<Statement>(); //создает список, с экземплярами класса Statement
+            Permissions = new List<Permission>(); //создает список, с экземплярами класса Permission
         }
 
         public string Name { get; }
@@ -20,9 +20,9 @@ namespace iUniversity
         public List<Statement> Statements { get; }
         public List<Permission> Permissions { get; }
 
-        public bool RegistrationUser(int idUser) // Зарегистрировать пользователя в деканате
+        public bool RegistrationUser(int idUser) // Зарегистрировать пользователя в деканате, idUser берем id пользователя из экземпляра класса User
         {
-            if (!Users.Contains(idUser))
+            if (!Users.Contains(idUser)) //метод String.Contains указывающет, содержит ли указанная строка значение подстроки 
             {
                 Users.Add(idUser);
                 return true;
@@ -44,39 +44,33 @@ namespace iUniversity
 
         public bool GetStatement(Statement st) // Принять заявление
         {
-            if (!Users.Contains(int.Parse(st.UserId)))
+            if (!Users.Contains(int.Parse(st.UserId))) //если в списке пользователей деканата нет пользователя с таким id, которое указано в заявлении
             {
                 return false;
             }
 
-            Statements.Add(st);
+            Statements.Add(st); //если есть такой пользователь, то принимаем заявление
 
             return true;
         }
 
-        public void RemoveStatement(string userId)
+        public void RemoveStatement(string userId, int index) // удалить заявление из таблицы по ID пользователя и номеру записи
         {
-            int stIndex = -1;
             for (int i = 0; i < Statements.Count; i++)
             {
-                if (userId == Statements[i].UserId)
+                if (userId == Statements[i].UserId && i == index)
                 {
-                    stIndex = i;
+                    Statements.RemoveAt(i); //удаляет элемент списка List<T> с указанным индексом
                 }
-            }
-
-            if (stIndex != -1)
-            {
-                Statements.RemoveAt(stIndex);
             }
         }
 
-        public void CreatePermission(string userId) // Регистрация новго пропуска
+        public void CreatePermission(string userId) // Регистрация и восстановление пропуска
         {
             int permIndex = -1;
             for (int i = 0; i < Permissions.Count; i++)
             {
-                if (userId == Permissions[i].Id)
+                if (userId == Permissions[i].Id) //если в списке пропусков есть пользователь с переданным id 
                 {
                     permIndex = i;
                 }
@@ -84,26 +78,20 @@ namespace iUniversity
 
             if (permIndex != -1)
             {
-                Permissions.RemoveAt(permIndex);
+                Permissions.RemoveAt(permIndex); //удаляем элемент списка List<T> с указанным индексом, чтобы добавить новый
             }
 
-            Permissions.Add(new Permission(userId));
+            Permissions.Add(new Permission(userId)); //создаем новый пропуск с новым id
         }
 
-        public void RemovePermission(string userId)
+        public void RemovePermission(string userId, int index) //удаление пропуска
         {
-            int permIndex = -1;
             for (int i = 0; i < Permissions.Count; i++)
             {
-                if (userId == Permissions[i].Id)
+                if (userId == Permissions[i].Id && i == index)
                 {
-                    permIndex = i;
+                    Permissions.RemoveAt(i);
                 }
-            }
-
-            if (permIndex != -1)
-            {
-                Permissions.RemoveAt(permIndex);
             }
         }
     }

@@ -283,7 +283,7 @@ namespace iUniversity
                 if (dean.Id == realDeanId) // Находим выбранный деканат
                 {
                     // Удалим заявление из деканата
-                    dean.RemoveStatement(idUser);
+                    dean.RemoveStatement(idUser, rowindex);
                     DataGridDeanStatementsList.Rows.RemoveAt(rowindex);
                 }
             }
@@ -313,7 +313,7 @@ namespace iUniversity
                 if (dean.Id == realDeanId) // Находим выбранный деканат
                 {
                     dean.CreatePermission(idUser); // Сгененрируем новый пропуск для пользователя
-                    dean.RemoveStatement(idUser);
+                    dean.RemoveStatement(idUser, rowindex);
                     DataGridDeanStatementsList.Rows.RemoveAt(rowindex);
                     RedrawPermissionsList();
                 }
@@ -343,7 +343,7 @@ namespace iUniversity
             {
                 if (dean.Id == realDeanId) // Находим выбранный деканат
                 {
-                    dean.RemovePermission(idUser);
+                    dean.RemovePermission(idUser, rowindex);
                     DgPermissionsList.Rows.RemoveAt(rowindex);
                 }
             }

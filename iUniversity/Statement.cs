@@ -8,9 +8,9 @@ namespace iUniversity
 {
     class Statement
     {
-        public string Title { get; set; }
-        public string Subject { get; set; }
-        public string UserId { get; set; }
+        public string Title { get; set; } //заголовок
+        public string Subject { get; set; } //текст заявления
+        public string UserId { get; set; } // id пользователя
 
         public Statement(string title, string subject, string userId)
         {
