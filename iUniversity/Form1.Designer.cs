@@ -100,10 +100,11 @@
             // 
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Controls.Add(this.DeansList);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1039, 688);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(777, 557);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Деканаты";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -113,9 +114,10 @@
             this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Controls.Add(this.DeanLabelName);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(215, 8);
+            this.panel1.Location = new System.Drawing.Point(161, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(818, 674);
+            this.panel1.Size = new System.Drawing.Size(614, 548);
             this.panel1.TabIndex = 1;
             // 
             // tabControl1
@@ -123,10 +125,11 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Location = new System.Drawing.Point(7, 24);
+            this.tabControl1.Location = new System.Drawing.Point(5, 20);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(814, 647);
+            this.tabControl1.Size = new System.Drawing.Size(610, 526);
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage3
@@ -139,19 +142,21 @@
             this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Controls.Add(this.BtnCreateNewUser);
             this.tabPage3.Controls.Add(this.label2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(806, 618);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Size = new System.Drawing.Size(602, 500);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Пользователи";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // BtnRegistrationUserInDean
             // 
-            this.BtnRegistrationUserInDean.Location = new System.Drawing.Point(6, 570);
+            this.BtnRegistrationUserInDean.Location = new System.Drawing.Point(4, 463);
+            this.BtnRegistrationUserInDean.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnRegistrationUserInDean.Name = "BtnRegistrationUserInDean";
-            this.BtnRegistrationUserInDean.Size = new System.Drawing.Size(238, 42);
+            this.BtnRegistrationUserInDean.Size = new System.Drawing.Size(178, 34);
             this.BtnRegistrationUserInDean.TabIndex = 8;
             this.BtnRegistrationUserInDean.Text = "Зарегистрировать в деканате";
             this.BtnRegistrationUserInDean.UseVisualStyleBackColor = true;
@@ -161,18 +166,20 @@
             // 
             this.label3.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 292);
+            this.label3.Location = new System.Drawing.Point(4, 237);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(191, 17);
+            this.label3.Size = new System.Drawing.Size(150, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Список всех пользователей";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Location = new System.Drawing.Point(6, 275);
+            this.panel2.Location = new System.Drawing.Point(4, 223);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(794, 14);
+            this.panel2.Size = new System.Drawing.Size(596, 11);
             this.panel2.TabIndex = 6;
             // 
             // GridAllUsers
@@ -184,10 +191,11 @@
             this.AllUUName,
             this.AllUPatronumyc,
             this.AllUJob});
-            this.GridAllUsers.Location = new System.Drawing.Point(6, 316);
+            this.GridAllUsers.Location = new System.Drawing.Point(4, 257);
+            this.GridAllUsers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GridAllUsers.Name = "GridAllUsers";
             this.GridAllUsers.RowTemplate.Height = 24;
-            this.GridAllUsers.Size = new System.Drawing.Size(794, 248);
+            this.GridAllUsers.Size = new System.Drawing.Size(596, 202);
             this.GridAllUsers.TabIndex = 5;
             // 
             // AllUId
@@ -231,10 +239,11 @@
             this.UName,
             this.Patronumyc,
             this.Job});
-            this.GridRegUsersInDean.Location = new System.Drawing.Point(6, 23);
+            this.GridRegUsersInDean.Location = new System.Drawing.Point(4, 19);
+            this.GridRegUsersInDean.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GridRegUsersInDean.Name = "GridRegUsersInDean";
             this.GridRegUsersInDean.RowTemplate.Height = 24;
-            this.GridRegUsersInDean.Size = new System.Drawing.Size(794, 198);
+            this.GridRegUsersInDean.Size = new System.Drawing.Size(596, 161);
             this.GridRegUsersInDean.TabIndex = 3;
             // 
             // Id
@@ -271,9 +280,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(139, 227);
+            this.button1.Location = new System.Drawing.Point(104, 184);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 42);
+            this.button1.Size = new System.Drawing.Size(79, 34);
             this.button1.TabIndex = 4;
             this.button1.Text = "Удалить";
             this.button1.UseVisualStyleBackColor = true;
@@ -281,9 +291,10 @@
             // 
             // BtnCreateNewUser
             // 
-            this.BtnCreateNewUser.Location = new System.Drawing.Point(6, 227);
+            this.BtnCreateNewUser.Location = new System.Drawing.Point(4, 184);
+            this.BtnCreateNewUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnCreateNewUser.Name = "BtnCreateNewUser";
-            this.BtnCreateNewUser.Size = new System.Drawing.Size(127, 42);
+            this.BtnCreateNewUser.Size = new System.Drawing.Size(95, 34);
             this.BtnCreateNewUser.TabIndex = 3;
             this.BtnCreateNewUser.Text = "Редактировать";
             this.BtnCreateNewUser.UseVisualStyleBackColor = true;
@@ -293,19 +304,21 @@
             // 
             this.label2.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 3);
+            this.label2.Location = new System.Drawing.Point(4, 2);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 17);
+            this.label2.Size = new System.Drawing.Size(116, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Зарегистрированные";
             // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.panel3);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(806, 618);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Size = new System.Drawing.Size(602, 500);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Заявления";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -316,16 +329,18 @@
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.DataGridDeanStatementsList);
-            this.panel3.Location = new System.Drawing.Point(4, 4);
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(796, 608);
+            this.panel3.Size = new System.Drawing.Size(597, 494);
             this.panel3.TabIndex = 0;
             // 
             // BtnRemoveStatement
             // 
-            this.BtnRemoveStatement.Location = new System.Drawing.Point(430, 4);
+            this.BtnRemoveStatement.Location = new System.Drawing.Point(322, 3);
+            this.BtnRemoveStatement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnRemoveStatement.Name = "BtnRemoveStatement";
-            this.BtnRemoveStatement.Size = new System.Drawing.Size(164, 37);
+            this.BtnRemoveStatement.Size = new System.Drawing.Size(123, 30);
             this.BtnRemoveStatement.TabIndex = 3;
             this.BtnRemoveStatement.Text = "Удалить заявление";
             this.BtnRemoveStatement.UseVisualStyleBackColor = true;
@@ -335,17 +350,19 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(4, 3);
+            this.label9.Location = new System.Drawing.Point(3, 2);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(141, 29);
+            this.label9.Size = new System.Drawing.Size(107, 24);
             this.label9.TabIndex = 2;
             this.label9.Text = "Заявления";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(600, 4);
+            this.button2.Location = new System.Drawing.Point(450, 3);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(192, 37);
+            this.button2.Size = new System.Drawing.Size(144, 30);
             this.button2.TabIndex = 1;
             this.button2.Text = "Рассмотреть заявление";
             this.button2.UseVisualStyleBackColor = true;
@@ -358,10 +375,11 @@
             this.DgStatementUserId,
             this.DgStatementTitle,
             this.DgStatementSubject});
-            this.DataGridDeanStatementsList.Location = new System.Drawing.Point(3, 47);
+            this.DataGridDeanStatementsList.Location = new System.Drawing.Point(2, 38);
+            this.DataGridDeanStatementsList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DataGridDeanStatementsList.Name = "DataGridDeanStatementsList";
             this.DataGridDeanStatementsList.RowTemplate.Height = 24;
-            this.DataGridDeanStatementsList.Size = new System.Drawing.Size(790, 558);
+            this.DataGridDeanStatementsList.Size = new System.Drawing.Size(592, 453);
             this.DataGridDeanStatementsList.TabIndex = 0;
             // 
             // DgStatementUserId
@@ -387,19 +405,21 @@
             this.tabPage5.Controls.Add(this.BtnDeletePermission);
             this.tabPage5.Controls.Add(this.label10);
             this.tabPage5.Controls.Add(this.DgPermissionsList);
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(806, 618);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Size = new System.Drawing.Size(602, 500);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Пропуска";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // BtnDeletePermission
             // 
-            this.BtnDeletePermission.Location = new System.Drawing.Point(642, 7);
+            this.BtnDeletePermission.Location = new System.Drawing.Point(482, 6);
+            this.BtnDeletePermission.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnDeletePermission.Name = "BtnDeletePermission";
-            this.BtnDeletePermission.Size = new System.Drawing.Size(158, 29);
+            this.BtnDeletePermission.Size = new System.Drawing.Size(118, 24);
             this.BtnDeletePermission.TabIndex = 2;
             this.BtnDeletePermission.Text = "Удалить пропуск";
             this.BtnDeletePermission.UseVisualStyleBackColor = true;
@@ -409,9 +429,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(4, 7);
+            this.label10.Location = new System.Drawing.Point(3, 6);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(135, 29);
+            this.label10.Size = new System.Drawing.Size(105, 24);
             this.label10.TabIndex = 1;
             this.label10.Text = "Поропуска";
             // 
@@ -421,10 +442,11 @@
             this.DgPermissionsList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.DgPermissionsListUserId,
             this.DgPermissionsListGuid});
-            this.DgPermissionsList.Location = new System.Drawing.Point(6, 40);
+            this.DgPermissionsList.Location = new System.Drawing.Point(4, 32);
+            this.DgPermissionsList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DgPermissionsList.Name = "DgPermissionsList";
             this.DgPermissionsList.RowTemplate.Height = 24;
-            this.DgPermissionsList.Size = new System.Drawing.Size(794, 572);
+            this.DgPermissionsList.Size = new System.Drawing.Size(596, 465);
             this.DgPermissionsList.TabIndex = 0;
             // 
             // DgPermissionsListUserId
@@ -442,28 +464,30 @@
             // DeanLabelName
             // 
             this.DeanLabelName.AutoSize = true;
-            this.DeanLabelName.Location = new System.Drawing.Point(83, 4);
+            this.DeanLabelName.Location = new System.Drawing.Point(62, 3);
+            this.DeanLabelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DeanLabelName.Name = "DeanLabelName";
-            this.DeanLabelName.Size = new System.Drawing.Size(18, 17);
+            this.DeanLabelName.Size = new System.Drawing.Size(13, 13);
             this.DeanLabelName.TabIndex = 1;
             this.DeanLabelName.Text = "--";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 4);
+            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 17);
+            this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Название:";
             // 
             // DeansList
             // 
             this.DeansList.FormattingEnabled = true;
-            this.DeansList.ItemHeight = 16;
-            this.DeansList.Location = new System.Drawing.Point(7, 6);
+            this.DeansList.Location = new System.Drawing.Point(5, 5);
+            this.DeansList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DeansList.Name = "DeansList";
-            this.DeansList.Size = new System.Drawing.Size(202, 676);
+            this.DeansList.Size = new System.Drawing.Size(152, 550);
             this.DeansList.TabIndex = 0;
             this.DeansList.SelectedIndexChanged += new System.EventHandler(this.DeansList_SelectedIndexChanged);
             // 
@@ -472,9 +496,10 @@
             this.tabDean.Controls.Add(this.tabPage1);
             this.tabDean.Controls.Add(this.tabPage2);
             this.tabDean.Location = new System.Drawing.Point(1, 2);
+            this.tabDean.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabDean.Name = "tabDean";
             this.tabDean.SelectedIndex = 0;
-            this.tabDean.Size = new System.Drawing.Size(1047, 717);
+            this.tabDean.Size = new System.Drawing.Size(785, 583);
             this.tabDean.TabIndex = 0;
             // 
             // tabPage2
@@ -488,10 +513,11 @@
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.StatementUserId);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1039, 688);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Size = new System.Drawing.Size(777, 557);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Заявление";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -501,25 +527,28 @@
             this.StatementDeanList.BackColor = System.Drawing.Color.White;
             this.StatementDeanList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.StatementDeanList.FormattingEnabled = true;
-            this.StatementDeanList.Location = new System.Drawing.Point(129, 14);
+            this.StatementDeanList.Location = new System.Drawing.Point(97, 11);
+            this.StatementDeanList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StatementDeanList.Name = "StatementDeanList";
-            this.StatementDeanList.Size = new System.Drawing.Size(904, 24);
+            this.StatementDeanList.Size = new System.Drawing.Size(679, 21);
             this.StatementDeanList.TabIndex = 8;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 14);
+            this.label7.Location = new System.Drawing.Point(5, 11);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 17);
+            this.label7.Size = new System.Drawing.Size(51, 13);
             this.label7.TabIndex = 7;
             this.label7.Text = "Деканат";
             // 
             // BtnSaveStatement
             // 
-            this.BtnSaveStatement.Location = new System.Drawing.Point(868, 237);
+            this.BtnSaveStatement.Location = new System.Drawing.Point(651, 193);
+            this.BtnSaveStatement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnSaveStatement.Name = "BtnSaveStatement";
-            this.BtnSaveStatement.Size = new System.Drawing.Size(165, 38);
+            this.BtnSaveStatement.Size = new System.Drawing.Size(124, 31);
             this.BtnSaveStatement.TabIndex = 6;
             this.BtnSaveStatement.Text = "Подать заявление";
             this.BtnSaveStatement.UseVisualStyleBackColor = true;
@@ -527,54 +556,60 @@
             // 
             // StatementSubject
             // 
-            this.StatementSubject.Location = new System.Drawing.Point(129, 125);
+            this.StatementSubject.Location = new System.Drawing.Point(97, 102);
+            this.StatementSubject.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StatementSubject.MaxLength = 1500;
             this.StatementSubject.Name = "StatementSubject";
-            this.StatementSubject.Size = new System.Drawing.Size(904, 106);
+            this.StatementSubject.Size = new System.Drawing.Size(679, 87);
             this.StatementSubject.TabIndex = 5;
             this.StatementSubject.Text = "";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 121);
+            this.label6.Location = new System.Drawing.Point(5, 98);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 17);
+            this.label6.Size = new System.Drawing.Size(57, 13);
             this.label6.TabIndex = 4;
             this.label6.Text = "Описание";
             // 
             // StatementTitle
             // 
-            this.StatementTitle.Location = new System.Drawing.Point(129, 86);
+            this.StatementTitle.Location = new System.Drawing.Point(97, 70);
+            this.StatementTitle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StatementTitle.MaxLength = 255;
             this.StatementTitle.Name = "StatementTitle";
-            this.StatementTitle.Size = new System.Drawing.Size(904, 22);
+            this.StatementTitle.Size = new System.Drawing.Size(679, 20);
             this.StatementTitle.TabIndex = 3;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 86);
+            this.label5.Location = new System.Drawing.Point(5, 70);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 17);
+            this.label5.Size = new System.Drawing.Size(61, 13);
             this.label5.TabIndex = 2;
             this.label5.Text = "Заголовок";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 50);
+            this.label4.Location = new System.Drawing.Point(4, 41);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 17);
+            this.label4.Size = new System.Drawing.Size(92, 13);
             this.label4.TabIndex = 1;
             this.label4.Text = "ID пользователя";
             // 
             // StatementUserId
             // 
-            this.StatementUserId.Location = new System.Drawing.Point(129, 50);
+            this.StatementUserId.Location = new System.Drawing.Point(97, 41);
+            this.StatementUserId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StatementUserId.MaxLength = 5;
             this.StatementUserId.Name = "StatementUserId";
-            this.StatementUserId.Size = new System.Drawing.Size(904, 22);
+            this.StatementUserId.Size = new System.Drawing.Size(679, 20);
             this.StatementUserId.TabIndex = 0;
             // 
             // label8
@@ -588,10 +623,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 722);
+            this.ClientSize = new System.Drawing.Size(788, 587);
             this.Controls.Add(this.tabDean);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "iUniversity";
             this.tabPage1.ResumeLayout(false);

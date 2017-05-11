@@ -22,11 +22,11 @@ namespace iUniversity
             ComboBoxUserJob.Text = user.Job;
         }
 
-        private void SaveUserBtn_Click(object sender, EventArgs e)
+        private void SaveUserBtn_Click(object sender, EventArgs e) //обновить информацию о пользователе
         {
             var userId = Int32.Parse(LabelUserId.Text);
 
-            var parent = (Form1)this.Owner;
+            var parent = (Form1)this.Owner; //this.Owner - предыдушая форма - форма1, которая вызвала это окно
 
             foreach (object id in parent.Users)
             {
@@ -39,8 +39,8 @@ namespace iUniversity
                     user.Patromumyc = TextBoxUserPatronumyc.Text;
                     user.Job = ComboBoxUserJob.Text;
 
-                    parent.RedrawDeansUsersList();
-                    parent.ReDrawMainUsersList();
+                    parent.RedrawDeansUsersList(); //вызываем перерисовку формы1
+                    parent.ReDrawMainUsersList(); //отображаем обновленный список пользователей
                 }
             }
         }
